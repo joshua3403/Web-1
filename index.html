@@ -4,26 +4,52 @@
   <title>WEB1</title>
   <meta charser="utf-8">
   <style>
+    body {
+    margin: 0;
+    }
     a:link {
       color:black;
       text-decoration: none;
     }
-    a:visited{
+    a:visited {
       color:pink;
     }
-    a:hover{
+    a:hover {
       color:red;
       text-decoration: underline;
     }
+    #now{
+      color: red;
+    }
     h1 {
-      font-size: 45px;
+      font-size: 70px;
       text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: : 10px;
     }
     h2 {
-      font-size: 30px;
+      font-size: 50px;
     }
-    ol {
-      font-size: 20px;
+    #grid ol {
+      font-size: 40px;
+      border-right: 1px solid gray;
+      width: 200px;
+      margin: 0;
+      padding: 20px;
+      padding-right: 10px;
+      padding-left: 60px;
+    }
+    li {
+      padding-left: 5px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+    }
+    #article {
+      padding-left: 25px;
     }
   </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,12 +63,13 @@
   </script>
 </head>
 
-<h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-</ol>
+<h1><a href="index.html" id="now">WEB</a></h1>
+  <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html" >CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
 
   <!--
   <body>
@@ -53,18 +80,21 @@
       <li><a href="3.html"><font color="red">JavaScript</font></a></li>
     </ol>
   -->
-  <h2>WEB</h2>
+  <div id="article">
+    <h2>WEB</h2>
 
-  <p>
-    <iframe width="100%" height="500" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </P>
+    <p>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/tZooW6PritE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </P>
 
-  <p><a href="https://www.w3.org/standards/" target="_blank" title="WEB standards">The World Wide Web (WWW)</a>, also called the Web, is an <strong>information space</strong> where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible via the Internet.[1] English scientist Tim Berners-Lee and Belgian informatics engineer Robert Cailliau invented the World Wide Web in 1989. They wrote the first web browser in 1990 while employed at CERN in Switzerland.
-    The browser was released outside CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-    <img src="WEB.jpg" width="100%">
-    The World Wide Web has been central to the development of the Information Age and is the primary tool billions of people use to interact on the Internet. Web pages are primarily text documents formatted and annotated with Hypertext Markup Language (HTML).[7] In addition to formatted text, web pages may contain images, video, audio, and software components that are rendered in the user's web browser as coherent pages of multimedia content.
-    Embedded hyperlinks permit users to navigate between web pages. Multiple web pages with a common theme, a common domain name, or both, make up a website. Website content can largely be provided by the publisher, or interactively where users contribute content or the content depends upon the users or their actions. Websites may be mostly informative, primarily for entertainment, or largely for commercial, governmental, or non-governmental organisational purposes.</p>
+    <p><a href="https://www.w3.org/standards/" target="_blank" title="WEB standards">The World Wide Web (WWW)</a>, also called the Web, is an <strong>information space</strong> where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and accessible via the Internet.[1] English scientist Tim Berners-Lee and Belgian informatics engineer Robert Cailliau invented the World Wide Web in 1989. They wrote the first web browser in 1990 while employed at CERN in Switzerland.
+      The browser was released outside CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+      <img src="WEB.jpg" width="100%">
+      The World Wide Web has been central to the development of the Information Age and is the primary tool billions of people use to interact on the Internet. Web pages are primarily text documents formatted and annotated with Hypertext Markup Language (HTML).[7] In addition to formatted text, web pages may contain images, video, audio, and software components that are rendered in the user's web browser as coherent pages of multimedia content.
+      Embedded hyperlinks permit users to navigate between web pages. Multiple web pages with a common theme, a common domain name, or both, make up a website. Website content can largely be provided by the publisher, or interactively where users contribute content or the content depends upon the users or their actions. Websites may be mostly informative, primarily for entertainment, or largely for commercial, governmental, or non-governmental organisational purposes.</p>
 
+    </div>
+  </div>
   <!-- BEGIN JIVOSITE CODE {literal} -->
   <script type='text/javascript'>
   (function(){ var widget_id = 'MJ65msAg1k';var d=document;var w=window;function l(){
