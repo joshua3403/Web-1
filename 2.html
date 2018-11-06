@@ -18,6 +18,26 @@
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night') {
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+        var list = document.getElementsByTagName('a');
+        for(var i=0; i < list.length; i++) {
+          list[i].style.color = 'white';
+        }
+      } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+        var list = document.getElementsByTagName('a');
+        for(var i=0; i < list.length; i++) {
+          list[i].style.color = 'black';
+        }
+      }
+    ">
   <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
